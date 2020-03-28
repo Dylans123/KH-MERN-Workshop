@@ -1,0 +1,30 @@
+{
+  "name": "kh-mern-workshop",
+  "version": "1.0.0",
+  "description": "You'll need these two things since node.js is the programming language we'll be using and npm is the package manager that will give us access to all the different packages we'll need. Go to https://nodejs.org/en/download/ in order to download node and npm. #### Google Cloud SDK Google Cloud SDK will let you use the command line tools that we'll need to deploy this application to Google Cloud when we're done. You can download the SDK at https://cloud.google.com/sdk/docs/downloads-interactive.",
+  "engines": {
+    "node": "10"
+  },
+  "homepage": "https://mern-workshop-app.appspot.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylans123/KH-MERN-Workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylans123/KH-MERN-Workshop/issues"
+  },
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "path": "^0.12.7"
+  }
+}
