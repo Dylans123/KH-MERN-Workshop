@@ -30,15 +30,19 @@ app.post('/api', (req, res) => {
         name: body.name
     });
     kitty
-        .save()
+        .save((error, res) => {
+            if (error) {
+                res.status(400);
+                res.send('Failed to add a cat to the database');
+            }
+            else {
+                res.status(200);
+                res.send('Succesfully added a cat to the database');
+            }
+        })
         .then(() => {
             console.log('Cat added to the database');
-            res.status(200);
         })
-        .catch((error) => {
-            console.log(error);
-            res.status(400);
-        });
 })
 
 app.get('/*', (req, res) => {
